@@ -2,7 +2,7 @@
     --primary: #8ECAE6;
     --primary-light: #BDE0FE;
     --primary-dark: #6096BA;
-
+    --active: #007bff31;
     --secondary: #A2D2FF;
     --background: #F4F9FD;
     --surface: #FFFFFF;
@@ -34,6 +34,10 @@ body {
     min-height: 75vh;
 }
 
+article{
+    filter: drop-shadow(10px 12px 15px rgb(37, 55, 70)); /**Agrega una sombra y le da profundidad a las articles tags (Solo usuamos ese tag para tarjetas por eso se altera globalmente), para que parezca que flotara sobre el fondo*/
+}
+
 .section-label {
     color: var(--primary-dark);
     font-weight: 700;
@@ -59,6 +63,9 @@ body {
 .nav-link:hover,
 .nav-link.active {
     color: var(--primary-dark) !important;
+    border-bottom: 2px solid var(--primary-dark) !important;
+    border-radius: 4px 4px 0 0 !important;
+    background-color: var(--active) !important;
 }
 
 .btn-primary {
@@ -133,6 +140,7 @@ body {
 .bike-card {
     border-radius: 18px;
     overflow: hidden;
+    
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
@@ -194,7 +202,7 @@ body {
     color: white;
 }
 
-/* RESPONSIVE */
+/* RESPONSIVE: breakpoint para dispositivos móviles medianos, con utilidades propias*/
 @media (max-width: 768px) {
 
     .section-padding {
