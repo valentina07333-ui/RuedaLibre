@@ -1,0 +1,41 @@
+:root{
+    /* Primary */
+    --primary: #8ECAE6;
+    --primary-light: #BDE0FE;
+    --primary-dark: #6096BA;
+
+    /* Secondary */
+    --secondary: #A2D2FF;
+    --secondary-light: #DCEEFF;
+
+    /* Backgrounds */
+    --background: #F4F9FD;
+    --surface: #FFFFFF;
+    --surface-secondary: #EAF4FB;
+
+    /* Text */
+    --text-primary: #253746;
+    --text-secondary: #607D8B;
+    --text-muted: #90A4AE;
+
+    /* Borders */
+    --border: #D6E6F0;
+    --border-focus: #8ECAE6;
+
+    /* States */
+    --success: #81CDB5;
+    --warning: #F6D58A;
+    --danger: #EFA5A5;
+    --info: #8ECAE6;
+
+    /* Shadows */
+    --shadow-sm: 0 2px 8px rgba(96, 150, 186, 0.08);
+    --shadow-md: 0 4px 16px rgba(96, 150, 186, 0.12);
+
+    /* Radius */
+    --radius-sm: 6px;
+    --radius-md: 12px;
+    --radius-lg: 18px;
+    --radius-full: 999px;
+
+}
