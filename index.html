@@ -1,130 +1,420 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rueda Libre</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-WyOxWvTyr1QaMPfiPJSv76iReVthorl5uWlFtZPyK0IEB0hGzo9y5Bp9mYanr8Bu" crossorigin="anonymous"
-        defer></script>
+
+    <meta name="description"
+        content="Rueda Libre: descubre nuevas rutas y disfruta del ciclismo con nuestra comunidad.">
+
+    <title>Rueda Libre | Vive el ciclismo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js" defer></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-2">
+            <div class="container">
 
-
-        <nav class="navbar  navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a href="index.html" class="logo">
-                    <img src="./img/rueda-libre-isotipo.svg" alt="Logo de Rueda Libre" width="100" height="100">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./img/rueda-libre-isotipo.svg" alt="Rueda Libre" width="65" height="65">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                    aria-controls="navbarContent" aria-expanded="false" aria-label="Abrir navegación">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                <div class="collapse navbar-collapse" id="navbarContent">
+
+                    <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" href="#inicio">Inicio</a>
                         </li>
+
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Dropdown
+                            <a class="nav-link" href="./RuedaLibre_Nocturna_Tailwind/RuedaNocturna.html">
+                                Rueda Nocturna
                             </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
                         </li>
+
                         <li class="nav-item">
-                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                            <a class="nav-link" href="#nosotros">Nosotros</a>
                         </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#rutas">Rutas</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#tarifas">Tarifas</a>
+                        </li>
+
+                        <li class="nav-item ms-lg-2">
+                            <a class="btn btn-primary px-4" href="#reservas">
+                                Reservar ahora
+                            </a>
+                        </li>
+
                     </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
                 </div>
             </div>
         </nav>
     </header>
-    <main>
-        <section class="container mt-5 gap-2 ">
-            <h2>Bienvenidos a Rueda Libre</h2>
-            <p>Descubre la libertad de andar en bicicleta con nuestra comunidad.</p>
-        </section>
-        <section class="container mt-5 gap-2 ">
-            <h2>Sobre Nosotros</h2>
-            <p>Rueda Libre es una comunidad apasionada por el ciclismo, ofreciendo experiencias únicas y eventos para
-                todos los niveles de ciclistas.</p>
-        </section>
-        <section class="container mt-5 gap-2 ">
-            <h2>Próximos Eventos</h2>
-            <ul>
-                <li>Sabores de barrio - Junio 15, 2024</li>
-                <li>Aventura en Bicicleta de Montaña - Julio 20, 2024</li>
-                <li>Ruta Caritativa para la Salud - Agosto 10, 2024</li>
-            </ul>
-        </section>
-        <section class="container mt-5 gap-2 ">
-            <h2>Nuestra flota</h2>
-            <section class="d-flex direction-row gap-4 flex-wrap">
-                <div class="card" style="width: 18rem;">
-                    <img src="./img/03_bicicleta_urbana.png" class="card-img-top" alt="Urbana Clásica">
-                    <div class="card-body">
-                        <h5 class="card-title">Urbana Clásica</h5>
-                        <p class="card-text">Cómoda y liviana para las ciclorrutas.</p>
-                        <strong>Precio: $10.000 / hora</strong>
-                        <a href="#" class="btn btn-primary">Reservar</a>
-                    </div>
-                </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="./img/03_bicicleta_urbana.png" class="card-img-top" alt="Urbana Clásica">
-                    <div class="card-body">
-                        <h5 class="card-title">Urbana Clásica</h5>
-                        <p class="card-text">Cómoda y liviana para las ciclorrutas.</p>
-                        <strong>Precio: $10.000 / hora</strong>
-                        <a href="#" class="btn btn-primary">Reservar</a>
-                    </div>
-                </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="./img/03_bicicleta_urbana.png" class="card-img-top" alt="Urbana Clásica">
-                    <div class="card-body">
-                        <h5 class="card-title">Urbana Clásica</h5>
-                        <p class="card-text">Cómoda y liviana para las ciclorrutas.</p>
-                        <strong>Precio: $10.000 / hora</strong>
-                        <a href="#" class="btn btn-primary">Reservar</a>
-                    </div>
-                </div>
-            </section>
 
-            <a href="">
-                <button>
-                    Reservar ahora
-                </button>
-            </a>
-            <a href="">
-                <button>
-                    Tarifas
-                </button>
-            </a>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="container">
+                <div class="row align-items-center min-vh-75">
+
+                    <div class="col-lg-7 text-center text-lg-start">
+
+                        <span class="badge hero-badge mb-3">
+                            Tu próxima aventura comienza aquí
+                        </span>
+
+                        <h1 class="display-3 fw-bold mb-4">
+                            Descubre la libertad de
+                            <span class="text-primary">rodar.</span>
+                        </h1>
+
+                        <p class="lead mb-4">
+                            Conecta con la naturaleza, descubre nuevos caminos
+                            y disfruta del ciclismo con nuestra comunidad.
+                        </p>
+
+                        <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-3">
+
+                            <a href="#tarifas" class="btn btn-primary btn-lg px-4">
+                                Explorar bicicletas
+                            </a>
+
+                            <a href="#nosotros" class="btn btn-outline-primary btn-lg px-4">
+                                Conócenos
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 mt-5 mt-lg-0">
+                        <img src="./img/03_bicicleta_urbana.png" class="img-fluid hero-image"
+                            alt="Bicicleta de Rueda Libre">
+                    </div>
+
+                </div>
+            </div>
         </section>
+        <section id="nosotros" class="section-padding">
+            <div class="container">
+
+                <div class="row align-items-center g-5">
+
+                    <div class="col-lg-5">
+                        <span class="section-label">Nuestra comunidad</span>
+
+                        <h2 class="display-5 fw-bold mt-2 mb-4">
+                            Más que bicicletas, experiencias.
+                        </h2>
+
+                        <p class="text-secondary">
+                            Rueda Libre es una comunidad apasionada por el
+                            ciclismo. Creamos experiencias para que personas
+                            de todos los niveles puedan descubrir el placer
+                            de recorrer nuevos caminos.
+                        </p>
+
+                        <a href="#rutas" class="btn btn-outline-primary mt-3">
+                            Conoce nuestras rutas
+                        </a>
+                    </div>
+
+                    <div class="col-lg-7">
+                        <div class="about-card p-4 p-md-5 rounded-4">
+                            <h3 class="fw-bold mb-3">Nuestra filosofía</h3>
+
+                            <p class="mb-0">
+                                Creemos que cada recorrido es una oportunidad
+                                para conectar, aprender y disfrutar.
+                                No importa tu experiencia, siempre hay
+                                un camino esperando por ti.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="rutas" class="section-padding bg-section">
+            <div class="container">
+
+                <div class="text-center mb-5">
+                    <span class="section-label">Agenda ciclista</span>
+                    <h2 class="display-5 fw-bold mt-2">Nuestras rutas</h2>
+                    <p class="text-secondary">
+                        Comparte nuevas aventuras con nuestra comunidad.
+                    </p>
+                </div>
+
+                <div class="row g-4">
+
+                    <div class="col-md-6 col-lg-4">
+                        <article class="card event-card h-100 border-0 shadow-sm">
+                            <div class="card-body p-4">
+                                <span class="badge text-bg-primary mb-3">
+                                    Comunidad
+                                </span>
+
+                                <h5 class="card-title fw-bold">
+                                    Sabores de barrio
+                                </h5>
+
+                                <p class="card-text text-secondary">
+                                    Una ruta para descubrir la gastronomía
+                                    y los rincones de nuestra ciudad.
+                                </p>
+
+                                <div class="event-date">
+                                    15 de junio
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <article class="card event-card h-100 border-0 shadow-sm">
+                            <div class="card-body p-4">
+                                <span class="badge text-bg-primary mb-3">
+                                    Aventura
+                                </span>
+
+                                <h5 class="card-title fw-bold">
+                                    Aventura en bicicleta de montaña
+                                </h5>
+
+                                <p class="card-text text-secondary">
+                                    Explora nuevos terrenos y disfruta
+                                    de una experiencia fuera de lo común.
+                                </p>
+
+                                <div class="event-date">
+                                    20 de julio
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <article class="card event-card h-100 border-0 shadow-sm">
+                            <div class="card-body p-4">
+                                <span class="badge text-bg-primary mb-3">
+                                    Social
+                                </span>
+
+                                <h5 class="card-title fw-bold">
+                                    Ruta caritativa para la salud
+                                </h5>
+
+                                <p class="card-text text-secondary">
+                                    Pedalea por una buena causa y forma
+                                    parte de una iniciativa solidaria.
+                                </p>
+
+                                <div class="event-date">
+                                    10 de agosto
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="tarifas" class="section-padding">
+            <div class="container">
+
+                <div class="text-center mb-5">
+                    <span class="section-label">Encuentra tu bicicleta</span>
+                    <h2 class="display-5 fw-bold mt-2">Nuestra flota</h2>
+                    <p class="text-secondary">
+                        Elige la bicicleta ideal para tu próxima aventura.
+                    </p>
+                </div>
+
+                <div class="row g-4">
+
+                    <div class="col-md-6 col-lg-4">
+                        <article class="card bike-card h-100 border-0 shadow-sm">
+
+                            <div class="bike-image-container">
+                                <img src="./img/03_bicicleta_urbana.png" class="card-img-top"
+                                    alt="Bicicleta urbana clásica">
+                            </div>
+
+                            <div class="card-body p-4 d-flex flex-column">
+
+                                <span class="badge bike-badge align-self-start mb-2">
+                                    Urbana
+                                </span>
+
+                                <h5 class="card-title fw-bold">
+                                    Urbana Clásica
+                                </h5>
+
+                                <p class="card-text text-secondary">
+                                    Cómoda y liviana, ideal para recorrer
+                                    la ciudad y disfrutar de las ciclorrutas.
+                                </p>
+
+                                <div class="mt-auto">
+
+                                    <p class="bike-price mb-3">
+                                        $10.000
+                                        <small>/ hora</small>
+                                    </p>
+
+                                    <a href="#reservas" class="btn btn-primary w-100">
+                                        Reservar bicicleta
+                                    </a>
+
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <article class="card bike-card h-100 border-0 shadow-sm">
+
+                            <div class="bike-image-container">
+                                <img src="./img/mountain-bike.jpg" class="card-img-top"
+                                    alt="Bicicleta de montaña">
+                            </div>
+
+                            <div class="card-body p-4 d-flex flex-column">
+
+                                <span class="badge bike-badge align-self-start mb-2">
+                                    Montaña
+                                </span>
+
+                                <h5 class="card-title fw-bold">
+                                    Mountain Bike
+                                </h5>
+
+                                <p class="card-text text-secondary">
+                                    Diseñada para explorar terrenos
+                                    irregulares y disfrutar de la aventura.
+                                </p>
+
+                                <div class="mt-auto">
+
+                                    <p class="bike-price mb-3">
+                                        $15.000
+                                        <small>/ hora</small>
+                                    </p>
+
+                                    <a href="#reservas" class="btn btn-primary w-100">
+                                        Reservar bicicleta
+                                    </a>
+
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <article class="card bike-card h-100 border-0 shadow-sm">
+
+                            <div class="bike-image-container">
+                                <img src="./img/bike_urban.jpg" class="card-img-top" alt="Bicicleta deportiva">
+                            </div>
+
+                            <div class="card-body p-4 d-flex flex-column">
+
+                                <span class="badge bike-badge align-self-start mb-2">
+                                    Aventura
+                                </span>
+
+                                <h5 class="card-title fw-bold">
+                                    Gravel Aventura
+                                </h5>
+
+                                <p class="card-text text-secondary">
+                                    Una opción ligera para quienes buscan
+                                    un rato de aventura y buena experiencia.
+                                </p>
+
+                                <div class="mt-auto">
+
+                                    <p class="bike-price mb-3">
+                                        $12.000
+                                        <small>/ hora</small>
+                                    </p>
+
+                                    <a href="#reservas" class="btn btn-primary w-100">
+                                        Reservar bicicleta
+                                    </a>
+
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="reservas" class="reservation-section section-padding">
+            <div class="container text-center">
+
+                <h2 class="display-5 fw-bold mb-3">
+                    ¿Listo para comenzar?
+                </h2>
+
+                <p class="lead mb-4">
+                    Tu próxima aventura está a solo una reserva de distancia.
+                </p>
+
+                <a href="#tarifas" class="btn btn-light btn-lg px-5">
+                    Elegir mi bicicleta
+                </a>
+
+            </div>
+        </section>
+
     </main>
-    <footer>
-        <p>© 2024 Rueda Libre. All rights reserved.</p>
+
+
+    <!-- FOOTER -->
+    <footer class="footer py-4">
+        <div class="container">
+
+            <div class="row align-items-center text-center text-md-start">
+
+                <div class="col-md-6">
+                    <h5 class="fw-bold mb-1">Rueda Libre</h5>
+                    <p class="mb-0">
+                        Vive la experiencia del ciclismo.
+                    </p>
+                </div>
+
+                <div class="col-md-6 text-md-end mt-3 mt-md-0">
+                    <p class="mb-0">
+                        © 2024 Rueda Libre. Todos los derechos reservados.
+                    </p>
+                </div>
+
+            </div>
+        </div>
     </footer>
 </body>
 

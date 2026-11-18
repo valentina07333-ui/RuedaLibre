@@ -1,41 +1,219 @@
-:root{
-    /* Primary */
+:root {
     --primary: #8ECAE6;
     --primary-light: #BDE0FE;
     --primary-dark: #6096BA;
 
-    /* Secondary */
     --secondary: #A2D2FF;
-    --secondary-light: #DCEEFF;
-
-    /* Backgrounds */
     --background: #F4F9FD;
     --surface: #FFFFFF;
     --surface-secondary: #EAF4FB;
 
-    /* Text */
     --text-primary: #253746;
     --text-secondary: #607D8B;
-    --text-muted: #90A4AE;
 
-    /* Borders */
     --border: #D6E6F0;
-    --border-focus: #8ECAE6;
+    --shadow: 0 4px 16px rgba(96, 150, 186, 0.12);
 
-    /* States */
-    --success: #81CDB5;
-    --warning: #F6D58A;
-    --danger: #EFA5A5;
-    --info: #8ECAE6;
+    /* Bootstrap color variables: con esto se reescriben los colores de Bootstrap y se cargan de últimos*/
+    --bs-primary: #6096BA;
+    --bs-primary-rgb: 96, 150, 186;
+}
 
-    /* Shadows */
-    --shadow-sm: 0 2px 8px rgba(96, 150, 186, 0.08);
-    --shadow-md: 0 4px 16px rgba(96, 150, 186, 0.12);
+body {
+    font-family: "Black Ops One", system-ui; /* Cambia la fuente a "Black Ops One" a todo lo que esté dentro del body*/
+    color: var(--text-primary);
+    background: var(--surface);
+    font-weight:500;
+    font-style: normal;
+}
+.section-padding {
+    padding: 90px 0;
+}
 
-    /* Radius */
-    --radius-sm: 6px;
-    --radius-md: 12px;
-    --radius-lg: 18px;
-    --radius-full: 999px;
+.min-vh-75 {
+    min-height: 75vh;
+}
 
+.section-label {
+    color: var(--primary-dark);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+}
+
+.navbar {
+    border-bottom: 1px solid var(--border);
+}
+
+.navbar-brand img {
+    object-fit: contain;
+}
+
+.nav-link {
+    color: var(--text-primary);
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--primary-dark) !important;
+}
+
+.btn-primary {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #4F83A5;
+    border-color: #4F83A5;
+}
+
+.btn-outline-primary {
+    color: var(--primary-dark);
+    border-color: var(--primary-dark);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+}
+
+.hero-badge {
+    background-color: var(--secondary);
+    color: var(--text-primary);
+    padding: 10px 16px;
+    border-radius: 50px;
+}
+
+.hero h1 {
+    color: var(--text-primary);
+}
+
+.hero-image {
+    max-height: 420px;
+    width: 100%;
+    object-fit: contain; /** Hace que la imagen se ajuste al contenedor sin distorsionarse y pierda consistencia*/
+    filter: drop-shadow(10px 12px 15px rgba(37, 55, 70, 0.745)); /**Agrega una sompra y le da profundidad a la imagen, para que parezca que flotara sobre el fondo*/
+}
+
+.about-card {
+    background: var(--surface-secondary);
+    border: 1px solid var(--border);
+    min-height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bg-section {
+    background-color: var(--background);
+}
+
+.event-card {
+    border-radius: 16px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow) !important;
+}
+
+.event-date {
+    color: var(--primary-dark);
+    font-weight: 700;
+    border-top: 1px solid var(--border);
+    padding-top: 15px;
+}
+
+.bike-card {
+    border-radius: 18px;
+    overflow: hidden;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.bike-card:hover {
+    transform: translateY(-7px);
+    box-shadow: var(--shadow) !important;
+}
+
+.bike-image-container {
+    background: var(--surface-secondary);
+    height: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.bike-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.bike-badge {
+    background: var(--primary-light);
+    color: var(--text-primary);
+}
+
+.bike-price {
+    color: var(--primary-dark);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.bike-price small {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.reservation-section {
+    background: linear-gradient(135deg,
+            var(--primary-dark),
+            var(--primary));
+    color: white;
+}
+
+.reservation-section .btn-light {
+    color: var(--primary-dark);
+    font-weight: 600;
+}
+
+.reservation-section .btn-light:hover {
+    background-color: var(--surface-secondary);
+}
+
+.footer {
+    background-color: var(--text-primary);
+    color: white;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+    .section-padding {
+        padding: 60px 0;
+    }
+
+    .hero-section {
+        padding: 50px 0;
+    }
+
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-image {
+        max-height: 300px;
+    }
+
+    .about-card {
+        min-height: auto;
+    }
 }
